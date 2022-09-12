@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM_WebTool_Alpha</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="GSVGinput" style="width: 500px; float:left; height:100px; background:lightgreen; margin:10px">
+        <label>Number of players in General Simple Voting Game:</label><br>
+        <input type="number" id="GSVGnumPlayers" name="GSVGnumPlayers" min="1" max ="9"> <br>    
+    
+        <label>Winning divisions (separated by line breaks):</label><br>
+        <textarea name="GSVGwinningDivs" id="GSVGwinningDivs"></textarea><br>
+        <button onclick="GSVGgetInputAndExecute()">Submit</button>
+
+        <div id="GSVGTable">
+        </div>
+
+    </div>
+
+
+    <div class ="WSVGinput" style="width: 500px; float:left; height:100px; background:lightblue; margin:10px">
+        <label>Quota for Weighted Simple Voting Game:</label><br>
+        <input type="number" id="WSVGQuota" name="WSVGQuota" min="1">
+        <br>
+
+        <label>Weights of players (separated by spaces):</label><br>
+        <textarea name="WSVGWeights" id="WSVGWeights"></textarea><br>
+        <button onclick="WSVGgetInputAndExecute()">Submit</button>
+
+        <div id="WSVGTable">
+        </div>
+
+    </div>
+
+
+    
+ 
+</body>
+
+    <script src="RM_WebTool_Alpha.js">
+    </script>
+
+</html>
